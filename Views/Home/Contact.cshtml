@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div class="row">
+    <div class="col-lg-2">
+        <address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+        </address>
+
+        <address>
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        </address>
+    </div>
+
+
+
+    <div class="col-lg-10">
+        <form id="formContact" name="formContact" action="#" class="form-horizontal" role="form" method="post">
+            <div class="form-group">
+                <label for="u_name" class="col-lg-2 control-label">Name</label>
+
+                <div class="col-lg-10">
+                    <input name="u_name" class="form-control" type="text" placeholder="Name" required>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="u_email" class="col-lg-2 control-label">Email</label>
+
+                <div class="col-lg-10">
+                    <input name="u_email" class="form-control" type="Email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="col-lg-2 control-label">Subject</label>
+
+                <div class="col-lg-10">
+                    <input name="subject" class="form-control" type="text" placeholder="Subject" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="col-lg-2 control-label">Message</label>
+
+                <div class="col-lg-10">
+                    <textarea name="message" class="form-control" placeholder="Message" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button id="send_btn" type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
